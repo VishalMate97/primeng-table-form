@@ -55,7 +55,24 @@ export class Table1Component implements OnInit {
       "email": "jjovicic4@examiner.com",
       "gender": "Female",
       "ip_address": "246.255.83.82"
-    }]
+    },
+    {
+      "id": 6,
+      "first_name": 'shubham',
+      "last_name": 'kondewar',
+      "email": 'shubham@toplist.cz',
+      "gender": 'Male',
+      "ip_address": '192.168.1.1',
+    },
+    {
+      "id": 7,
+      "first_name": 'Ganesh',
+      "last_name": 'Landge',
+      "email": 'ganesh@google.ca',
+      "gender": 'male',
+      "ip_address": '192.168.1.57',
+    }
+  ]
 
     this.products.forEach(function (resp, index) {
       resp.dataKeyEdit = index + 1;
@@ -65,6 +82,7 @@ export class Table1Component implements OnInit {
       { field: 'id', header: 'Id' },
       { field: 'first_name', header: 'First Name' },
       { field: 'last_name', header: 'Last Name' },
+      { field: 'email', header: 'Email' },
       { field: 'gender', header: 'Gender' },
       { field: 'ip_address', header: 'Ip Address' },
     ];
