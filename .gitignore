@@ -10,4 +10,4 @@ textpattern/
 HISTORY.txt
 README.txt
 
-app/myApp/node_modules
+app\myApp\node_modules
