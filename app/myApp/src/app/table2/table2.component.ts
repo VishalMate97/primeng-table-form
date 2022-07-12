@@ -46,7 +46,7 @@ export class Table2Component implements OnInit {
       },
       {
         id: 4,
-        code: null,
+        code: 'RXJS 4567',
         name: 'Enrique Burree',
         email: 'eburree3@toplist.cz',
         gender: 'Male',
@@ -59,6 +59,22 @@ export class Table2Component implements OnInit {
         email: 'jkelbie4@google.ca',
         gender: 'Female',
         ip_address: '213.115.230.152',
+      },
+      {
+        id: 6,
+        code: '953-0704',
+        name: 'shubham kondewar',
+        email: 'shubham@toplist.cz',
+        gender: 'Male',
+        ip_address: '192.168.1.1',
+      },
+      {
+        id: 7,
+        code: '153-0704',
+        name: 'Ganesh Landge',
+        email: 'ganesh@google.ca',
+        gender: 'male',
+        ip_address: '192.168.1.57',
       }
     ];
 
@@ -67,12 +83,16 @@ export class Table2Component implements OnInit {
     });
 
     this.cols = [
+      { field: 'id', header: 'ID' },
       { field: 'code', header: 'Code' },
       { field: 'name', header: 'Name' },
       { field: 'email', header: 'Email' },
       { field: 'gender', header: 'Gender' },
+      { field: 'ip_address', header: 'Ip Address' },
     ];
   }
+
+  
 
   editProduct(product: any) {
     this.product = { ...product };
